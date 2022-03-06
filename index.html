@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <section class="payment">
+    <div class="container">
+
+
+      <div class="row my-5">
+
+
+        <div class="col-8">
+
+          <form class="form" action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
+
+            <div class="form__box shadow-sm p-3 mb-5 bg-body rounded">
+              <h1 class="payment__title">Payment Information</h1>
+
+              <div class="col-12">
+
+                <div class="mb-3">
+                  <label for="password" class="form-label">CARD NUMBER</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required>
+                </div>
+              </div>
+
+              <div class="row">
+
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">CARD HOLDER</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                  </div>
+                </div>
+
+                <div class="col-3">
+                  <div class="mb-3">
+                    <label for="date" class="form-label">EXP DATE</label>
+                    <input type="datetime" class="form-control" name="date" id="date" placeholder="Enter expare date" required>
+                  </div>
+                </div>
+
+                <div class="col-3">
+                  <div class="mb-3">
+                    <label for="cvc" class="form-label">CVC</label>
+                    <input type="password" class="form-control" name="cvc" id="cvc" placeholder="Enter verification code" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="payment__box shadow-sm p-3 mb-5 bg-body rounded">
+              <h2 class="payment__title">Billing address </h2>
+
+              <div class="col-12">
+                <div class="mb-3">
+                  <div class="form-check mt-4 border-bottom">
+                    <input class="form-check-input " type="radio" name="sameAddress" id="sameAddress" >
+                    <label class="form-check-label mb-3 fw-bolder" for="sameAddress">
+                      Same as the shipping address
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input " type="radio" name="differentAddress" id="differentAddress" checked>
+                    <label class="form-check-label fw-bolder" for="differentAddress">
+                      Use a different billing address
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__subbox d-flex justify-content-between align-items-center">
+              <a href="#" class="form__link text-decoration-none">Return to shipping method</a>
+
+              <button type="submit" class="form__btn btn-primary  rounded-2">Complete order</button>
+            </div>
+
+        </div>
+        </form>
+
+
+        <div class="col-4">
+          <div class="chocolate shadow-sm  mb-5 bg-body rounded">
+            <ol class="chocolate__list list-unstyled p-2">
+              <li class="chocolate__item d-flex  align-items-center py-4 border-bottom">
+                <button type="button" class="btn btn-light position-relative me-3">
+                  <img src="./images/chocolate.jpg" alt="chocolate image" class="chocolate__img">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                    2
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+
+                <p class="chocolate__text fw-bold me-5">Chocolate bar</p>
+
+                <span class="chocolate__price fw-bold ms-5"> $2.49</span>
+              </li>
+
+
+              <li class="chocolate__item d-flex justify-content-between align-items-center pt-2">
+                <p class="chocolate__text fw-bold">Subtotal </p>
+
+                <span class="chocolate__price fw-bold"> $4.98</span>
+              </li>
+
+              <li class="chocolate__item d-flex justify-content-between align-items-center border-bottom">
+                <p class="chocolate__text fw-bold">Shipping </p>
+
+                <span class="chocolate__price fw-bold"> $3.00</span>
+              </li>
+              <div class="chocolate__info">
+
+                <li class="chocolate__item d-flex justify-content-between align-items-center pt-3">
+                  <p class="chocolate__text fw-bold">Total </p>
+
+                  <span class="chocolate__price fw-bold"> $7.98</span>
+                </li>
+
+              </div>
+
+            </ol>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+</body>
+</html>
